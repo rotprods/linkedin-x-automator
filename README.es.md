@@ -30,10 +30,10 @@ El agente te hará un **onboarding de 9 preguntas**, instalará los skills y sub
 |---|---|
 | `PROMPT-0-ARRANQUE.md` | El prompt que pegas para instalarlo todo |
 | `PROMPTS-1-9.md` | Prompts de refuerzo por fase |
-| `skills/` | Los 4 skills del motor (plantillas) |
+| `skills/` | Los 10 skills del motor y de calidad/producción (plantillas) |
 | `agents/` | El equipo de subagentes (plantillas) |
 | `config/` | Configuración (platforms, cadence, topics, secrets) |
-| `onboarding/` | Guías paso a paso (Slack, Telegram, conectores, checklist, cuestionario, FAQ) |
+| `onboarding/` | Guías paso a paso (Slack, Telegram, conectores, checklist, cuestionario, FAQ, skills-produccion) |
 | `signal_pipeline/` | **Motor**: investigación de señales cada 4h |
 | `content_engine/` | **Motor**: señales → posts + imágenes |
 | `publisher/` | **Motor**: publicación X/LinkedIn + anti-duplicados |

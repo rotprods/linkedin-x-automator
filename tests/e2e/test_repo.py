@@ -47,7 +47,15 @@ REQUIRED_FILES = [
     "onboarding/checklist-final.md",
     "onboarding/FAQ.md",
     "onboarding/telegram-setup.md",
+    "onboarding/skills-produccion-setup.md",
     "data/schema.sql",
+    # Skills de calidad/producción
+    "skills/linkedin-post-quality-checklist.md",
+    "skills/linkedin-prepublish-qa.md",
+    "skills/shorts-production-qa.md",
+    "skills/native-spanish-short-production.md",
+    "skills/avatar-talking-head-shorts.md",
+    "skills/higgsfield-avatar-video.md",
     # Motor (código real copiado)
     "signal_pipeline/config.py",
     "signal_pipeline/score.py",

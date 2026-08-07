@@ -26,7 +26,7 @@ NO publiques nada hasta que responda las 9 preguntas.
 ## 2. Instala leyendo el repo `linkedin-x-automator`
 Cuando tenga las respuestas del onboarding, instala el sistema leyendo las plantillas del repo:
 
-- **Skills** → crea los skills desde `skills/` (social-growth-engine, social-growth-engine-cycle, sge-publish-one-post, social-short-pipeline).
+- **Skills** → crea los skills desde `skills/` (los 10: social-growth-engine, social-growth-engine-cycle, sge-publish-one-post, social-short-pipeline, linkedin-post-quality-checklist, linkedin-prepublish-qa, shorts-production-qa, native-spanish-short-production, avatar-talking-head-shorts, higgsfield-avatar-video), sustituyendo los `{placeholders}` con mis respuestas.
 - **Agentes** → crea los subagentes desde `agents/` (growth-engine-operator, content-creator, trend-scout, social-media-strategist, campaign-launch-pad, youtube-specialist), adaptando los `{placeholders}` con mis respuestas.
 - **Config** → rellena `config/platforms.example.yaml`, `config/cadence.example.yaml` y `config/topics.example.yaml` con mis respuestas del onboarding, guardándolos como `config/platforms.yaml`, `config/cadence.yaml` y `config/topics.yaml` (sin los `.example`).
 - **Secrets** → copia `config/secrets.example.env` a `config/secrets.env` y dime EXACTAMENTE qué credenciales necesito darte (o qué debo configurar yo) para que funcione.
