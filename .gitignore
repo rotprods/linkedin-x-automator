@@ -1,0 +1,28 @@
+# --- Secrets y credenciales: NUNCA commitees ---
+config/secrets.env
+.env
+*.env
+!config/secrets.example.env
+
+# --- Datos locales del motor (se regeneran solos) ---
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+data/state/
+state/
+*.csv
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Sistema / editor ---
+.DS_Store
+*.log
+node_modules/
+
+# --- Ejemplos de contenido del alumno (no subir) ---
+research/drafts/
+research/feeds/

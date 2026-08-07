@@ -1,0 +1,33 @@
+# Cadencia y programación
+# MODO ALTA FRECUENCIA: 1 post/hora combinado señal-prioridad.
+# best_hours es una ventana OBLIGATORIA: NO se publica fuera de los best_hours.
+
+cadence:
+  target_posts_per_day: 14
+  x_per_day: 9
+  linkedin_per_day: 3
+  buffer_per_day: 2          # colchón de drafts para días de poca señal
+  hourly_tick: true          # tick de publicación cada 1h (solo dentro de best_hours)
+
+pipeline_4h:
+  cron: "0 */4 * * *"
+  timezone: "{TU_TIMEZONE}"
+  sources: [web, x_timeline, x_mentions, trend_research, cross_analysis]
+
+daily_report:
+  cron: "0 8 * * *"
+  timezone: "{TU_TIMEZONE}"
+  deliver_to: [slack, telegram]
+
+learning:
+  cadence_days: 7            # revisar métricas diarias cada 7 días para reponderar temas
+  min_data_points: 2
+  reweight_by: [impressions, engagement_rate, profile_visits]
+
+# Notificador — hacia dónde van los avisos ([SGE] ... ≤400 chars)
+notify:
+  primary: slack
+  telegram_chat_id: "{TU_CHAT_ID_TELEGRAM}"   # tu chatId, NUNCA en el repo público
+  slack_channels:
+    - name: "{TU_CANAL_SLACK}"
+      id: "{TU_SLACK_CHANNEL_ID}"
