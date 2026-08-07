@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Growth Engine — De cero a 100k (guía visual paso a paso)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,600&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23a3e635'/%3E%3Cpath d='M7 22V10h3l5 7V10h3v12h-3l-5-7v7z' fill='%23000'/%3E%3C/svg%3E">
+<style>:root{--bg:#fbfbf9;--surface:#ffffff;--surface2:#f4f5f1;--line:#e6e8e2;--ink:#0a0a0a;--ink2:#3a3f33;--mut:#6b7280;--mut2:#9aa0a8;--green:#a3e635;--green-d:#6aa810;--green-ink:#3f6212;--green-soft:#f2fbe6;--black:#000;--serif:'Playfair Display',Georgia,'Times New Roman',serif;--sans:'Inter',-apple-system,system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace;--shadow:0 1px 2px rgba(10,10,10,.04),0 12px 40px rgba(10,10,10,.06);--shadow-lg:0 2px 4px rgba(10,10,10,.05),0 30px 70px rgba(10,10,10,.10);}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}.wrap{max-width:1120px;margin:0 auto;padding:0 30px}img{display:block}.nav{position:sticky;top:0;z-index:50;background:rgba(251,251,249,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav-in{max-width:1120px;margin:0 auto;padding:14px 30px;display:flex;align-items:center;gap:14px}.nav .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:15px;letter-spacing:-.2px}.nav .brand img{width:30px;height:30px;border-radius:8px}.nav .spacer{flex:1}.nav a{color:var(--mut);text-decoration:none;font-size:13px;font-weight:600;margin-left:20px;transition:.2s}.nav a:hover{color:var(--ink)}.nav .tag{background:var(--green-soft);color:var(--green-ink);border:1px solid rgba(163,230,53,.4);padding:6px 14px;border-radius:40px;font-size:12.5px;font-weight:700}.hero{position:relative;padding:110px 0 90px;overflow:hidden;background:radial-gradient(900px 420px at 85% -10%,rgba(163,230,53,.16),transparent 55%),radial-gradient(700px 380px at 8% 0%,rgba(163,230,53,.08),transparent 55%)}.hero .grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;opacity:.25;-webkit-mask-image:radial-gradient(900px 500px at 50% 0%,#000,transparent 75%);mask-image:radial-gradient(900px 500px at 50% 0%,#000,transparent 75%)}.hero .wrap{position:relative}.hero .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green-ink);background:var(--green-soft);border:1px solid rgba(163,230,53,.4);padding:7px 16px;border-radius:40px;margin-bottom:28px}.hero .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(163,230,53,.25)}.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(40px,7vw,84px);line-height:1.02;letter-spacing:-2px}.hero h1 .accent{font-style:italic;color:var(--green-d);position:relative}.hero h1 .accent::after{content:"";position:absolute;left:0;bottom:2px;width:100%;height:10px;background:rgba(163,230,53,.5);z-index:-1}.hero .sub{font-size:clamp(16px,2.2vw,21px);color:var(--mut);max-width:680px;margin:24px auto 0}.hero .sub b{color:var(--ink);font-weight:700}.hero .cta{margin-top:34px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:60px;font-weight:700;font-size:15px;text-decoration:none;transition:.25s}.btn-primary{background:var(--ink);color:#fff}.btn-primary:hover{background:var(--green-d)}.btn-ghost{border:1.5px solid var(--ink);color:var(--ink)}.btn-ghost:hover{background:var(--ink);color:#fff}.kpis{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:48px}.kpi{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px 24px;min-width:150px;box-shadow:var(--shadow);text-align:left}.kpi .n{font-family:var(--serif);font-weight:900;font-size:30px;letter-spacing:-1px;color:var(--ink)}.kpi .n small{color:var(--green-d)}.kpi .l{font-size:11px;color:var(--mut);letter-spacing:1px;text-transform:uppercase;margin-top:2px;font-weight:600}.plat-strip{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:26px;flex-wrap:wrap}.plat-chip{display:inline-flex;align-items:center;gap:9px;background:var(--surface);border:1px solid var(--line);border-radius:40px;padding:8px 18px;font-size:14px;font-weight:700;box-shadow:var(--shadow)}.plat-chip img,.plat-chip svg{width:22px;height:22px;border-radius:6px;object-fit:contain}.plat-chip .ok{color:var(--green-d);font-size:12px}.plat-label{font-size:11px;color:var(--mut);letter-spacing:1px;text-transform:uppercase;font-weight:700}section{padding:72px 0;scroll-margin-top:84px}section.alt{background:var(--surface2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.sec-head{display:flex;align-items:flex-end;gap:18px;margin-bottom:40px}.sec-head .num{font-family:var(--serif);font-weight:700;font-size:15px;color:#fff;background:var(--ink);width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex:0 0 auto}.sec-head h2{font-family:var(--serif);font-weight:900;font-size:clamp(26px,4vw,40px);letter-spacing:-1px;line-height:1.05}.sec-head .tag{margin-left:auto;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--mut);display:flex;align-items:center;gap:8px}.sec-head .tag::before{content:"";width:26px;height:2px;background:var(--green);border-radius:2px}.lead{color:var(--mut);max-width:760px;font-size:16px;margin-bottom:26px}.lead b{color:var(--ink)}.stepimg{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center;margin:44px 0}.stepimg.rev{grid-template-columns:1fr 1.05fr}.stepimg.rev .img{order:2}.stepimg.rev .txt{order:1}.stepimg .img{background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow-lg);padding:10px}.stepimg .img img{width:100%;height:auto;border-radius:14px;object-fit:contain}.stepimg .img .cap{display:flex;align-items:center;gap:8px;padding:12px 14px 6px;font-size:11.5px;color:var(--mut2)}.stepimg .img .cap .rec{width:9px;height:9px;border-radius:50%;background:#ff5f57}.stepimg .txt .step-n{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green-ink);background:var(--green-soft);padding:6px 14px;border-radius:40px;margin-bottom:16px}.stepimg .txt h3{font-family:var(--serif);font-weight:900;font-size:clamp(22px,3vw,30px);letter-spacing:-.5px;margin-bottom:14px;line-height:1.1}.stepimg .txt p{color:var(--mut);font-size:15px;margin-bottom:14px}.stepimg .txt ul{list-style:none}.stepimg .txt li{color:var(--ink);font-size:14.5px;padding:7px 0 7px 32px;position:relative;border-bottom:1px dashed var(--line)}.stepimg .txt li:last-child{border-bottom:none}.stepimg .txt li::before{content:"→";position:absolute;left:6px;color:var(--green-d);font-weight:800}.stepimg .txt .code{font-family:var(--mono);font-size:12.5px;background:var(--surface2);color:var(--green-ink);padding:10px 14px;border-radius:10px;display:inline-block;margin-top:14px;border:1px solid var(--line)}.stepimg .txt .code b{color:var(--ink)}.step-arrow{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--mut2);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin:6px 0}.step-arrow .ln{width:60px;height:2px;background:linear-gradient(90deg,transparent,var(--green));border-radius:2px}.step-arrow .ic{color:var(--green-d);font-size:18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:18px}.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:var(--shadow);transition:.25s}.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:rgba(163,230,53,.5)}.card .ic{width:44px;height:44px;border-radius:12px;background:var(--green-soft);display:flex;align-items:center;justify-content:center;margin-bottom:16px}.card .ic img{width:26px;height:26px}.card h3{font-size:17px;font-weight:800;letter-spacing:-.2px;margin-bottom:8px}.card p{color:var(--mut);font-size:13.5px}.card .mono{font-family:var(--mono);font-size:11.5px;color:var(--green-ink);background:var(--green-soft);padding:3px 10px;border-radius:7px;display:inline-block;margin-top:12px}.tag-row{margin-top:12px;display:flex;gap:6px;flex-wrap:wrap}.tag{font-size:11px;font-weight:700;padding:4px 12px;border-radius:40px;border:1px solid var(--line);color:var(--green-ink);background:var(--green-soft)}.tag.black{background:var(--ink);color:#fff;border-color:var(--ink)}.tag.outline{background:transparent;color:var(--mut);border:1px solid var(--line)}.agents{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px}.agent{flex:1 1 235px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow);transition:.25s}.agent:hover{border-color:rgba(163,230,53,.6);transform:translateY(-3px)}.agent .role{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--green-d);margin-bottom:7px}.agent .name{font-family:var(--serif);font-weight:700;font-size:17px;margin-bottom:7px}.agent p{color:var(--mut);font-size:13px}.agent .badge{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;color:var(--green-ink);background:var(--green-soft);padding:3px 10px;border-radius:30px;margin-top:10px}.agent details{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}.agent details summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;color:var(--green-d);user-select:none}.agent details summary::-webkit-details-marker{display:none}.agent details summary .arr{display:inline-flex;transition:transform .3s;color:var(--green-d);font-size:12px}.agent details[open] summary .arr{transform:rotate(90deg)}.agent details .md{font-family:var(--mono);font-size:11.5px;line-height:1.55;background:var(--surface2);border:1px solid var(--line);border-radius:10px;padding:14px;margin-top:10px;white-space:pre-wrap;color:var(--ink2);max-height:260px;overflow:auto}.agent .copybtn{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:11.5px;font-weight:700;background:var(--ink);color:#fff;border:none;border-radius:8px;padding:7px 14px;cursor:pointer;transition:.2s}.agent .copybtn:hover{background:var(--green-d)}.agent .copybtn.copied{background:var(--green-d);color:#fff}.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:12px;margin:28px 0}.fstep{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 12px;text-align:center;box-shadow:var(--shadow);transition:.25s;position:relative}.fstep:hover{transform:translateY(-4px);border-color:var(--green)}.fstep .n{position:absolute;top:-10px;left:-10px;width:24px;height:24px;border-radius:50%;background:var(--ink);color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center}.fstep .ic{font-size:24px;margin-bottom:8px}.fstep .t{font-weight:800;font-size:14px}.fstep .d{font-size:11px;color:var(--mut);margin-top:3px}.fstep .plt{display:inline-flex;align-items:center;gap:5px;margin-top:8px;font-size:10.5px;font-weight:700;color:var(--green-ink)}.fstep .plt img{width:14px;height:14px;object-fit:contain;border-radius:3px}.table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}.table th{background:var(--surface2);text-align:left;padding:14px 18px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--mut)}.table td{padding:13px 18px;border-top:1px solid var(--line);font-size:14px}.table td:first-child{font-weight:700;white-space:nowrap}.table tr:hover td{background:rgba(163,230,53,.05)}.table .ok{color:var(--green-d);font-weight:800}.notify{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}.ncard{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}.ncard .k{font-size:11px;font-weight:700;color:var(--green-d);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}.ncard .v{font-size:16px;font-weight:800}.ncard .sub{font-size:12.5px;color:var(--mut);margin-top:4px}footer{padding:70px 0 80px;background:var(--ink);color:#fff;text-align:center}footer .big{font-family:var(--serif);font-weight:900;font-size:clamp(24px,4.5vw,42px);letter-spacing:-1px}footer .big em{color:var(--green);font-style:italic}footer p{color:#9aa0a8;margin-top:16px;font-size:14.5px;max-width:620px;margin-left:auto;margin-right:auto}.pill-line{margin-top:26px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.pill{padding:9px 18px;border:1px solid rgba(255,255,255,.18);border-radius:40px;font-size:13px;color:#d3d7dd}.pill b{color:#fff}.pill .g{color:var(--green)}@media(max-width:760px){.stepimg,.stepimg.rev{grid-template-columns:1fr;gap:20px}.stepimg.rev .img{order:0}.stepimg.rev .txt{order:1}.wrap{padding:0 20px}section{padding:52px 0}.onb{grid-template-columns:1fr;gap:28px}}
+/* Plantillas copiables + descargables */
+.btnrow{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.copybtn,.dlbtn,.prcopy{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;border-radius:8px;padding:7px 14px;cursor:pointer;transition:.2s;line-height:1.2}
+.copybtn{background:var(--ink);color:#fff;border:none}
+.dlbtn{background:var(--surface);color:var(--green-ink);border:1px solid var(--green)}
+.dlbtn:hover{background:var(--green-d);color:#fff;border-color:var(--green-d)}
+.copybtn:hover{background:var(--green-d)}
+.copybtn.copied,.dlbtn.copied{background:var(--green-d);color:#fff}
+.card details summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;color:var(--green-d);margin-top:14px;user-select:none}
+.card details summary::-webkit-details-marker{display:none}
+.card details summary .arr{display:inline-flex;transition:transform .3s;color:var(--green-d);font-size:12px}
+.card details[open] summary .arr{transform:rotate(90deg)}
+.card details .md{font-family:var(--mono);font-size:11.5px;line-height:1.55;background:var(--surface2);border:1px solid var(--line);border-radius:10px;padding:14px;margin-top:10px;white-space:pre-wrap;color:var(--ink2);max-height:300px;overflow:auto}
+/* ===== Onboarding guiado ===== */
+.onb{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.onb .col h3{font-family:var(--serif);font-weight:900;font-size:clamp(20px,2.6vw,28px);letter-spacing:-.5px;line-height:1.1;margin-bottom:6px}
+.onb .col .lead{font-size:14px;color:var(--mut);margin-bottom:18px}
+.tline{position:relative;margin:6px 0 0;padding-left:36px}
+.tline::before{content:"";position:absolute;left:10px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--green),var(--line))}
+.tstep{position:relative;padding:8px 0 16px}
+.tstep::before{content:"";position:absolute;left:-36px;top:14px;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid var(--green);box-shadow:0 0 0 3px rgba(163,230,53,.22)}
+.tstep:last-child{padding-bottom:0}
+.tstep .tt{font-weight:800;font-size:14.5px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.tstep .tt .tm{color:var(--green-d);font-family:var(--mono);font-size:11.5px;font-weight:600}
+.tstep .td{color:var(--mut);font-size:13px;margin-top:3px;line-height:1.5}
+.prcard{background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);margin-bottom:16px;overflow:hidden}
+.prcard .prhead{display:flex;align-items:center;gap:12px;padding:13px 18px;border-bottom:1px solid var(--line);background:var(--surface2)}
+.prcard .prhead .n{width:30px;height:30px;border-radius:9px;background:var(--ink);color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.prcard .prhead .t{font-weight:800;font-size:14.5px;flex:1}
+.prcard .prhead .tm{font-family:var(--mono);font-size:11px;color:var(--mut2)}
+.prcard .prbody{font-family:var(--mono);font-size:12.5px;line-height:1.6;padding:16px 18px;color:var(--ink2);white-space:pre-wrap}
+.prcard .prfoot{padding:10px 18px;border-top:1px solid var(--line);background:var(--surface2)}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:14px}
+.qcard{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.qcard .qk{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--green-d);margin-bottom:6px}
+.qcard .qv{font-size:14.5px;font-weight:800}
+.qcard .qs{font-size:12.5px;color:var(--mut);margin-top:4px}.reveal{opacity:1}.hero .parallax{transform:translateZ(0);will-change:transform,opacity}@media(prefers-reduced-motion:reduce){.reveal{opacity:1}}</style>
+</head>
+<body>
+
+<!-- ====== NAV ====== -->
+<div class="nav"><div class="nav-in">
+  <div class="brand"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_2zv0ZwTLslDi8yQhQ13R8PX7SVU/207643f1-ff5a-41ac-a364-a867e9b900c5.webp" alt="Higgsfield" loading="eager" decoding="async" width="148" height="148"> Social Growth Engine</div>
+  <div class="spacer"></div>
+  <a href="#pipeline">Pipeline</a>
+  <a href="#onboarding">Onboarding</a>
+  <a href="#agentes">Agentes</a>
+  <a href="#pasos">Guía</a>
+  <span class="tag">de 0 → 100k</span>
+</div></div>
+
+<!-- ====== HERO ====== -->
+<div class="hero">
+  <div class="grid-bg parallax" data-speed="0.25"></div>
+  <div class="wrap" style="text-align:center">
+    <div class="eyebrow"><span class="dot"></span> Guía visual · desde cero · Supercomputer</div>
+    <h1>Social Growth Engine<br><span class="accent">De cero</span> a 100k</h1>
+    <p class="sub">Un motor que investiga cada <b>4 horas</b>, puntúa señales virales, escribe el copy, genera la imagen, publica solo en <b>X</b> y <b>LinkedIn</b>, mide y se re-calibra. Te enseño a montarlo con capturas reales.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#pasos">Ver los 10 pasos →</a>
+      <a class="btn btn-ghost" href="#pipeline">Entender el pipeline</a>
+    </div>
+    <div class="kpis">
+      <div class="kpi reveal" data-delay="1"><div class="n"><span class="cnt" data-count="10">0</span></div><div class="l">pasos visuales</div></div>
+      <div class="kpi reveal" data-delay="2"><div class="n"><span class="cnt" data-count="12">0</span><small>+</small></div><div class="l">temas vigilados</div></div>
+      <div class="kpi reveal" data-delay="3"><div class="n"><span class="cnt" data-count="4">0</span><small>h</small></div><div class="l">research</div></div>
+      <div class="kpi reveal" data-delay="4"><div class="n"><span class="cnt" data-count="1">0</span><small>h</small></div><div class="l">publicación</div></div>
+      <div class="kpi reveal" data-delay="5"><div class="n"><span class="cnt" data-count="100">0</span><small>k</small></div><div class="l">objetivo</div></div>
+    </div>
+    <div class="plat-strip">
+      <span class="plat-chip"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_2zv0ZwTLslDi8yQhQ13R8PX7SVU/fec69536-f966-48db-9585-9c717dc53472.webp" alt="X" loading="eager" decoding="async" width="447" height="447"> X <span class="ok">✓ conectado</span></span>
+      <span class="plat-chip"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_2zv0ZwTLslDi8yQhQ13R8PX7SVU/08a2f3b1-6157-46e7-8e02-bfc4e5f22de3.webp" alt="LinkedIn" loading="eager" decoding="async" width="190" height="148"> LinkedIn <span class="ok">✓ conectado</span></span>
+      <span class="plat-chip"><svg viewBox="0 0 24 24" role="img" aria-label="Slack"><path fill="#E01E5A" d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313z"/><path fill="#36C5F0" d="M8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.521A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.521-2.521h6.313z"/><path fill="#2EB67D" d="M18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.521A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.521v6.313z"/><path fill="#ECB22E" d="M15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"/></svg> Slack <span class="ok">✓ conectado</span></span>
+    </div>
+    <div class="plat-label" style="text-align:center;margin-top:12px">publica en ambas plataformas de forma autónoma</div>
+  </div>
+</div>
+
+<!-- ====== PASO 1 ====== -->
+<section id="pasos"><div class="wrap">
+  <div class="sec-head"><div class="num">1</div><h2>Busca Higgsfield</h2><span class="tag">El punto de partida</span></div>
+  <div class="stepimg">
+    <div class="txt">
+      <div class="step-n">Paso 1 · Descubrimiento</div>
+      <h3>Todo empieza en Higgsfield</h3>
+      <p>Generación de vídeo/imagen + <b>Supercomputer</b>: un entorno para crear agentes, skills, conectores y automatizaciones.</p>
+      <ul>
+        <li>Busca "Higgsfield" en Google.</li>
+        <li>Entra en higgsfield.ai, la plataforma oficial.</li>
+        <li>Lo que buscas está en <b>Supercomputer</b>.</li>
+      </ul>
+      <span class="code">higgsfield<b>.ai</b> · Supercomputer</span>
+    </div>
+    <div class="img">
+      <div class="cap"><span class="rec"></span> Captura real · Google → higgsfield</div>
+      <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_2zv0ZwTLslDi8yQhQ13R8PX7SVU/b5055173-8a7c-4253-8751-265a00943de5.webp" alt="Búsqueda de Higgsfield en Google" loading="eager" decoding="async" width="1000" height="509">
+    </div>
+  </div>
+  <div class="step-arrow"><span class="ln"></span><span class="ic">↓</span><span class="ln"></span></div>
+</div></section>
+
+<!-- ====== PASO 2 ====== -->
+<section class="alt"><div class="wrap">
+  <div class="sec-head"><div class="num">2</div><h2>Entra en Higgsfield</h2><span class="tag">La plataforma</span></div>
+  <div class="stepimg rev">
+    <div class="img">
+      <div class="cap"><span class="rec"></span> Captura real · Home de Higgsfield</div>
+      <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_2zv0ZwTLslDi8yQhQ13R8PX7SVU/5633fabb-33b9-405b-8f90-5caf0a819bc8.webp" alt="Home de Higgsfield" loading="eager" decoding="async" width="1000" height="509">
+    </div>
+    <div class="txt">
+      <div class="step-n">Paso 2 · La home</div>
+      <h3>Generación + automatización, un solo sitio</h3>
+      <p>Image, Video, Audio, Cinema Studio — y el botón clave: <b>Supercomputer</b>, "Automation, skills, apps and more".</p>
+      <ul>
+        <li>Generación 4K de vídeo e imagen.</li>
+        <li>Modelos punteros (Seedance, etc.).</li>
+        <li><b>Supercomputer</b>: aquí montamos el motor.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="step-arrow"><span class="ln"></span><span class="ic">↓</span><span class="ln"></span></div>
+</div></section>
+
+<!-- ====== PASO 3 ====== -->
+<section><div class="wrap">
+  <div class="sec-head"><div class="num">3</div><h2>Abre Supercomputer</h2><span class="tag">Donde vive el motor</span></div>
+  <div class="stepimg">
+    <div class="txt">
+      <div class="step-n">Paso 3 · El corazón</div>
+      <h3>Skills, conectores y automatización</h3>
+      <p>Supercomputer es el centro del sistema: creas agentes, skills, conectas redes y programas los crons que hacen el trabajo autónomo.</p>
+      <ul>
+        <li><b>Skills</b> ← procedimientos reutilizables (el runbook del pipeline).</li>
+        <li><b>Connectors</b> ← tu cuenta de X, LinkedIn, TikTok, Slack, Telegram.</li>
+        <li><b>Memory</b> ← memoria persistente entre sesiones.</li>
+        <li><b>Scheduled</b> ← los crons (research 4h, publicación 1h, reporte diario).</li>
+      </ul>
+    </div>
+    <div class="img">
+      <div class="cap"><span class="rec"></span> Captura real · Supercomputer</div>
+      <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_2zv0ZwTLslDi8yQhQ13R8PX7SVU/84b54f4e-db4b-47a9-a451-fd540d8c4617.webp" alt="Supercomputer" loading="eager" decoding="async" width="470" height="316">
+    </div>
+  </div>
+  <div class="stepimg rev" style="margin-top:54px">
+    <div class="img">
+      <div class="cap"><span class="rec"></span> Captura real · Panel Supercomputer</div>
+      <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_2zv0ZwTLslDi8yQhQ13R8PX7SVU/e5a478e2-973c-460d-8865-f58f5c7f0937.webp" alt="Panel Supercomputer" loading="eager" decoding="async" width="1000" height="508">
+    </div>
+    <div class="txt">
+      <div class="step-n">Paso 3b · El panel</div>
+      <h3>Tu banco de trabajo</h3>
+      <p>Historial, accesos a Skills/Connectors/Memory y tus <b>trabajos programados</b> (el "AI Growth Pipeline" ya corriendo). Aquí escribes los prompts y lanzas agentes.</p>
+      <ul>
+        <li>Nuevo chat para hablar con tus agentes.</li>
+        <li>Skills, Connectors y Memory a la izquierda.</li>
+        <li>Los crons listados en "Scheduled".</li>
+      </ul>
+    </div>
+  </div>
+  <div class="step-arrow"><span class="ln"></span><span class="ic">↓</span><span class="ln"></span></div>
+</div></section>
+
+<!-- ====== PASO 4 ====== -->
+<section class="alt"><div class="wrap">
+  <div class="sec-head"><div class="num">4</div><h2>Skills · Connectors · Memory</h2><span class="tag">Los tres pilares</span></div>
+  <div class="stepimg">
+    <div class="txt">
+      <div class="step-n">Paso 4 · Configuración</div>
+      <h3>Los tres bloques que harán el trabajo</h3>
+      <ul>
+        <li><b>Skills</b> ← el know-how: runbook, ciclo, publish-one-post, shorts.</li>
+        <li><b>Connectors</b> ← las cuentas: X, LinkedIn, TikTok (y Slack/Telegram para avisar).</li>
+        <li><b>Memory</b> ← preferencias: idioma, tono, best-hours, kill-switch, 100k.</li>
+      </ul>
+      <span class="code">skill <b>social-growth-engine</b> · connector-tool-usage</span>
+    </div>
+    <div class="img">
+      <div class="cap"><span class="rec"></span> Captura real · Menú</div>
+      <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_2zv0ZwTLslDi8yQhQ13R8PX7SVU/7f4b3261-3c16-49c0-960c-09a69ec87763.webp" alt="Skills Connectors Memory" loading="eager" decoding="async" width="458" height="250">
+    </div>
+  </div>
+  <div class="step-arrow"><span class="ln"></span><span class="ic">↓</span><span class="ln"></span></div>
+</div></section>
+
+<!-- ====== PASO 5 ====== -->
+<section><div class="wrap">
+  <div class="sec-head"><div class="num">5</div><h2>Conecta tus redes</h2><span class="tag">Los connectors</span></div>
+  <div class="stepimg rev">
+    <div class="img">
+      <div class="cap"><span class="rec"></span> Captura real · Conectores</div>
+      <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_2zv0ZwTLslDi8yQhQ13R8PX7SVU/5718b012-b662-4137-b15e-d58d9a814b17.webp" alt="Conectores redes sociales" loading="eager" decoding="async" width="1000" height="196">
+    </div>
+    <div class="txt">
+      <div class="step-n">Paso 5 · Conexión</div>
+      <h3>Da a los agentes acceso a tus cuentas</h3>
+      <p>En "SOCIAL MEDIA &amp; PUBLISHING" conectas cada plataforma con un clic (OAuth). Para el motor activamos <b>X</b> y <b>LinkedIn</b> (y TikTok como extra).</p>
+      <ul>
+        <li><b>X</b> — leer timeline/menciones y publicar.</li>
+        <li><b>LinkedIn</b> — publicar texto, imagen, carrusel.</li>
+        <li><b>TikTok / Instagram / Threads</b> — opcionales, para escalar.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="stepimg">
+    <div class="txt">
+      <div class="step-n">Paso 5b · Autorización</div>
+      <h3>Termina la conexión en la ventana que se abre</h3>
+      <p>Al conectar, Higgsfield abre la autorización de la plataforma. Pulsa <b>"Finish connecting"</b> y el conector queda activo.</p>
+      <ul>
+        <li>Autoriza vía OAuth en la pestaña que se abre.</li>
+        <li>Si no aparece, pulsa "Reopen it".</li>
+        <li>Listo: el conector muestra el check verde ✓.</li>
+      </ul>
+    </div>
+    <div class="img">
+      <div class="cap"><span class="rec"></span> Captura real · Autorización</div>
+      <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_2zv0ZwTLslDi8yQhQ13R8PX7SVU/68b3d70b-c6fe-482a-921d-8aa091588357.webp" alt="Conexión TikTok Ads" loading="eager" decoding="async" width="1000" height="800">
+    </div>
+  </div>
+  <div class="step-arrow"><span class="ln"></span><span class="ic">↓</span><span class="ln"></span></div>
+</div></section>
+
+<!-- ====== PASO 6 ====== -->
+<section class="alt"><div class="wrap" id="agentes">
+  <div class="sec-head"><div class="num">6</div><h2>Crea los subagentes</h2><span class="tag">Tu equipo</span></div>
+  <p class="lead">Cada agente tiene un rol, sus <b>skills</b> y sus <b>tools</b>. No es un script: es un equipo con memoria que el orquestador coordina.</p>
+  <div class="agents">
+    <div class="agent" style="border-color:#a3e635;box-shadow:0 0 0 1px rgba(163,230,53,.4)">
+      <div class="role">Orquestador</div><div class="name">growth-engine-operator</div>
+      <p>Investiga, puntúa, escribe, publica, mide y aprende. Dueño del pipeline end-to-end.</p>
+      <span class="badge">★ principal</span>
+      <details><summary><span class="arr">▶</span> Ver prompt .md</summary>
+        <div class="md"># Rol: Operador del Social Growth Engine
+Objetivo: hacer crecer tu audiencia en X (Twitter) y LinkedIn hasta tu meta de seguidores mediante un pipeline autónomo.
+
+Responsabilidades:
+- Investigar señales frescas cada ciclo (web search + timeline/menciones de tus conectores).
+- Puntuar señales por potencial viral (0-100) y elegir las 2-3 top.
+- Generar copy por plataforma: X en inglés (≤280, enlace en el primer reply); LinkedIn narrativo con pregunta final (enlace al final).
+- Publicar respetando un kill-switch global y horarios óptimos.
+- Medir impresiones/likes/replies tras publicar y volcarlas a una BD.
+- Aprender: re-ponderar temas según el engagement real.
+
+Cómo trabajar:
+- Git es la verdad: si no está en git, no existe. Clona tu repo y commitea todo.
+- Respeta la config (platforms.yaml, cadence.yaml, topics.yaml).
+- Al publicar registra el external_id y haz commit+push.
+- Calidad: imagen 16:9 por post, sin AI-slop, fuente real, dedupe 7 días.
+
+Personalízalo: cambia plataformas, idiomas, horarios, temas y objetivo por los tuyos.</div>
+        <div class="btnrow"><button class="copybtn" data-copy="growth-engine-operator">Copiar .md</button><button class="dlbtn" data-name="growth-engine-operator">Descargar .md</button></div>
+      </details>
+    </div>
+
+    <div class="agent"><div class="role">Contenido</div><div class="name">content-creator</div>
+      <p>Estrategia, copywriting, hooks y creatividad adaptada a cada plataforma.</p>
+      <details><summary><span class="arr">▶</span> Ver prompt .md</summary>
+        <div class="md"># Rol: Especialista de contenido
+Objetivo: crear copy y conceptos que enganchen por plataforma.
+
+Responsabilidades:
+- Estrategia de contenido y calendario editorial.
+- Copywriting con hooks fuertes (primeras palabras / primeros 2 segundos).
+- Adaptar el tono: X directo y conciso; LinkedIn narrativo con pregunta final.
+- Ideación creativa a partir de señales y tendencias.
+
+Cómo trabajar:
+- Un ángulo por señal, adaptado a cada red.
+- Anti-slop: frases cortas, un dato concreto, sin muletillas de IA.
+- Personalízalo con tu tono, idiomas y nicho.</div>
+        <div class="btnrow"><button class="copybtn" data-copy="content-creator">Copiar .md</button><button class="dlbtn" data-name="content-creator">Descargar .md</button></div>
+      </details></div>
+
+    <div class="agent"><div class="role">Tendencias</div><div class="name">trend_scout</div>
+      <p>Qué está de moda en Reels/TikTok/Shorts y en ad libraries, y por qué funciona.</p>
+      <details><summary><span class="arr">▶</span> Ver prompt .md</summary>
+        <div class="md"># Rol: Scout de tendencias
+Objetivo: detectar qué está de moda en Reels/TikTok/Shorts y en ad libraries (Meta/TikTok), y por qué funciona.
+
+Responsabilidades:
+- Escanear plataformas en paralelo.
+- Desglosar por qué un vídeo se vuelve viral (hook, ritmo, audio, formato).
+- Devolver conceptos listos para producir.
+
+Cómo trabajar:
+- Solo investigación e inteligencia (no genera media ni lee tu cuenta de anuncios).
+- Personalízalo con tus nichos y plataformas objetivo.</div>
+        <div class="btnrow"><button class="copybtn" data-copy="trend_scout">Copiar .md</button><button class="dlbtn" data-name="trend_scout">Descargar .md</button></div>
+      </details></div>
+
+    <div class="agent"><div class="role">Distribución</div><div class="name">campaign_launch_pad</div>
+      <p>Publica un asset acabado en paralelo en varias redes + email + aviso Slack.</p>
+      <details><summary><span class="arr">▶</span> Ver prompt .md</summary>
+        <div class="md"># Rol: Plataforma de lanzamiento
+Objetivo: publicar un asset ya terminado en varias redes en paralelo.
+
+Responsabilidades:
+- Distribuir en Instagram, LinkedIn, TikTok, X, Threads + email + aviso Slack.
+- Adaptar el caption a cada canal.
+- No crea el asset (úsalo con un creador de contenido).
+
+Cómo trabajar:
+- Personalízalo con tus canales, formatos y avisos.</div>
+        <div class="btnrow"><button class="copybtn" data-copy="campaign_launch_pad">Copiar .md</button><button class="dlbtn" data-name="campaign_launch_pad">Descargar .md</button></div>
+      </details></div>
+
+    <div class="agent"><div class="role">Estrategia</div><div class="name">social-media-strategist</div>
+      <p>Estrategia de redes, ingeniería de hooks y optimización de cada post.</p>
+      <details><summary><span class="arr">▶</span> Ver prompt .md</summary>
+        <div class="md"># Rol: Estratega de redes
+Objetivo: estrategia general, edición de contenido y coaching de viralidad.
+
+Responsabilidades:
+- Investigar tendencias y hooks del nicho.
+- Optimizar cada post/vídeo para máximo impacto.
+- Definir la voz de marca y el calendario.
+
+Cómo trabajar:
+- Personalízalo con tu marca, tono y audiencia.</div>
+        <div class="btnrow"><button class="copybtn" data-copy="social-media-strategist">Copiar .md</button><button class="dlbtn" data-name="social-media-strategist">Descargar .md</button></div>
+      </details></div>
+
+    <div class="agent"><div class="role">Canal</div><div class="name">youtube-specialist</div>
+      <p>Research, hooks, guion y packaging para tu canal de vídeo.</p>
+      <details><summary><span class="arr">▶</span> Ver prompt .md</summary>
+        <div class="md"># Rol: Especialista YouTube
+Objetivo: research, hooks, guion, vídeo (incl. faceless), thumbnails, clipping y análisis post-publicación.
+
+Responsabilidades:
+- Hooks y guiones con retención.
+- Thumbnails y packaging del vídeo.
+- Recortar highlights y analizar el rendimiento.
+
+Cómo trabajar:
+- Personalízalo con tu canal, estilo y formatos.</div>
+        <div class="btnrow"><button class="copybtn" data-copy="youtube-specialist">Copiar .md</button><button class="dlbtn" data-name="youtube-specialist">Descargar .md</button></div>
+      </details></div>
+  </div>
+  <div class="grid" style="margin-top:26px">
+    <div class="card"><div class="ic">📘</div><h3>social-growth-engine</h3><p>Runbook: investigación, generación, publicación, medición y ajuste.</p><div class="tag-row"><span class="tag">runbook</span><span class="tag">X</span><span class="tag">LinkedIn</span></div>
+      <details><summary><span class="arr">▶</span> Ver plantilla .md</summary>
+        <div class="md"># Skill: social-growth-engine
+Objetivo: orquestar el pipeline autónomo de crecimiento en X y LinkedIn.
+
+## Responsabilidades
+- Investigar señales frescas cada ciclo (web search + timeline/menciones de conectores).
+- Puntuar señales por potencial viral (0-100) y elegir las 2-3 top.
+- Generar copy por plataforma: X (≤280, enlace en el primer reply); LinkedIn (narrativo con pregunta final, enlace al final del body).
+- Generar una imagen 16:9 por post (modelo: nano_banana_pro).
+- Publicar respetando el kill-switch (auto_publish) y los best-hours.
+- Medir impresiones/likes/replies tras publicar y volcarlas a la BD.
+- Aprender: re-ponderar temas según el engagement real.
+
+## Reglas de calidad (QA obligatorio)
+- Imagen 16:9 por post, sin AI-slop, fuente real, dedupe a 7 días.
+- Anti-slop: frases cortas, un dato concreto, sin muletillas de IA.
+- X: copy ≤280 caracteres, URL en el primer reply.
+- LinkedIn: narrativo, pregunta final, enlace al final.
+
+## Configuración
+- platforms.yaml, cadence.yaml, topics.yaml, state/queue.json.
+- Git es la verdad: clona tu repo y commitea todo.
+
+Personalízalo: plataformas, idiomas, horarios, temas, tono y objetivo.</div>
+        <div class="btnrow"><button class="copybtn" data-copy="social-growth-engine">Copiar .md</button><button class="dlbtn" data-name="social-growth-engine">Descargar .md</button></div>
+      </details></div>
+    <div class="card"><div class="ic">🔁</div><h3>social-growth-engine-cycle</h3><p>Ejecuta un ciclo completo y el tick horario de la cola.</p><div class="tag-row"><span class="tag">ciclo 4h</span><span class="tag">tick 1h</span></div>
+      <details><summary><span class="arr">▶</span> Ver plantilla .md</summary>
+        <div class="md"># Skill: social-growth-engine-cycle
+Objetivo: ejecutar un ciclo completo del motor y el tick horario que publica la cola.
+
+## Flujo del ciclo (research)
+1. Web search + conectores X → señales (3-6 reales con URL y fuente).
+2. Puntuar 0-100 y elegir las 2-3 top.
+3. Generar copy X/LinkedIn + imagen 16:9.
+4. Encolar en state/queue.json.
+
+## Tick horario (publish)
+- Tomar el post de mayor prioridad de la cola.
+- Validar best-hours (no publicar fuera de la ventana).
+- Publicar vía conector OAuth y registrar external_id.
+- Commit + push; avisar por Slack/Telegram.
+
+## Reglas
+- Git es la verdad: clona tu repo y commitea.
+- Respeta el kill-switch y la configuración.
+
+Personalízalo: cadencia, horarios y plataformas.</div>
+        <div class="btnrow"><button class="copybtn" data-copy="social-growth-engine-cycle">Copiar .md</button><button class="dlbtn" data-name="social-growth-engine-cycle">Descargar .md</button></div>
+      </details></div>
+    <div class="card"><div class="ic">📤</div><h3>sge-publish-one-post</h3><p>Publica un post respetando kill-switch, best-hours y 280 chars.</p><div class="tag-row"><span class="tag">1 post</span><span class="tag">best-hours</span></div>
+      <details><summary><span class="arr">▶</span> Ver plantilla .md</summary>
+        <div class="md"># Skill: sge-publish-one-post
+Objetivo: publicar UN post respetando kill-switch, best-hours y los límites de cada plataforma.
+
+## Flujo
+1. Sacar el post de mayor prioridad de la cola.
+2. Validar best-hours (no publicar fuera de la ventana).
+3. QA: imagen 16:9, copy ≤280 (X), fuente real, dedupe a 7 días.
+4. Publicar vía conector OAuth; registrar el external_id.
+5. Commit + push; avisar por Slack/Telegram.
+
+## Kill-switch
+- auto_publish=false → solo encolar, NUNCA publicar.
+
+Personalízalo: redes, límites de caracteres y ventana de publicación.</div>
+        <div class="btnrow"><button class="copybtn" data-copy="sge-publish-one-post">Copiar .md</button><button class="dlbtn" data-name="sge-publish-one-post">Descargar .md</button></div>
+      </details></div>
+    <div class="card"><div class="ic">🎬</div><h3>social-short-pipeline</h3><p>Reels verticales con el avatar y la voz por ~33 créditos.</p><div class="tag-row"><span class="tag">TikTok</span><span class="tag">~33cr</span></div>
+      <details><summary><span class="arr">▶</span> Ver plantilla .md</summary>
+        <div class="md"># Skill: social-short-pipeline
+Objetivo: producir reels verticales (TikTok/Reels/Shorts) con avatar y voz.
+
+## Flujo
+1. Idea/hook del trend scout.
+2. Guion corto + voz (TTS o clon).
+3. Vídeo vertical 9:16 con avatar.
+4. Subtítulos + QA.
+5. Publicar o encolar.
+
+## Coste
+- ~33 créditos por reel.
+
+Personalízalo: avatar, voz, estilo y formato vertical.</div>
+        <div class="btnrow"><button class="copybtn" data-copy="social-short-pipeline">Copiar .md</button><button class="dlbtn" data-name="social-short-pipeline">Descargar .md</button></div>
+      </details></div>
+  </div>
+  <div class="step-arrow"><span class="ln"></span><span class="ic">↓</span><span class="ln"></span></div>
+</div></section>
+
+<!-- ====== PASO 7 ====== -->
+<section><div class="wrap">
+  <div class="sec-head"><div class="num">7</div><h2>Define tus temas</h2><span class="tag">Qué vigilar</span></div>
+  <div class="grid">
+    <div class="card"><div class="ic">🎯</div><h3>Los 12 temas</h3><p>IA, negocios, stocks, crypto, Bretton Woods, herramientas IA, noticias, agentes IA, ingeniería IA y vibe-coding/marketing. Keywords + ángulos ganadores.</p></div>
+    <div class="card"><div class="ic">⚖️</div><h3>Pesos dinámicos</h3><p>El learning loop re-pondera temas según el engagement real. El sistema decide solo qué publicar más.</p></div>
+    <div class="card"><div class="ic">🔗</div><h3>Fuentes reales</h3><p>Cada señal lleva URL y fuente comprobada. Nada inventado. El cross-análisis conecta temas y arma predicciones.</p></div>
+  </div>
+  <div class="step-arrow"><span class="ln"></span><span class="ic">↓</span><span class="ln"></span></div>
+</div></section>
+
+<!-- ====== PASO 8 ====== -->
+<section class="alt"><div class="wrap" id="pipeline">
+  <div class="sec-head"><div class="num">8</div><h2>El pipeline automático</h2><span class="tag">Cómo funciona</span></div>
+  <p class="lead">Todo empieza con <b>web search</b> + conectores X. Cada 4h el motor detecta señales, las puntúa, escribe el copy y lo encola. El cron hace el resto.</p>
+  <div class="flow">
+    <div class="fstep"><span class="n">1</span><div class="ic">🔍</div><div class="t">Web search</div><div class="d">búsqueda de fuentes</div></div>
+    <div class="fstep"><span class="n">2</span><div class="ic">⚡</div><div class="t">Señal</div><div class="d">3-6 reales + URL</div></div>
+    <div class="fstep"><span class="n">3</span><div class="ic">🎨</div><div class="t">Imagen</div><div class="d">nano_banana_pro</div></div>
+    <div class="fstep"><span class="n">4</span><div class="ic">✍️</div><div class="t">Draft</div><div class="d">X EN · LI ES</div></div>
+    <div class="fstep"><span class="n">5</span><div class="ic">🗂️</div><div class="t">Cola</div><div class="d">state/queue.json</div></div>
+    <div class="fstep"><span class="n">6</span><div class="ic">📤</div><div class="t">Publicar</div><div class="d">conectores OAuth<div class="plt"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_2zv0ZwTLslDi8yQhQ13R8PX7SVU/fec69536-f966-48db-9585-9c717dc53472.webp" loading="eager" decoding="async" width="447" height="447">X</div><div class="plt"><img src="https://d2ol7oe51mr4n9.cloudfront.net/user_2zv0ZwTLslDi8yQhQ13R8PX7SVU/08a2f3b1-6157-46e7-8e02-bfc4e5f22de3.webp" loading="eager" decoding="async" width="190" height="148">in</div></div></div>
+    <div class="fstep"><span class="n">7</span><div class="ic">📈</div><div class="t">Medir</div><div class="d">impressions</div></div>
+    <div class="fstep"><span class="n">8</span><div class="ic">🧠</div><div class="t">Aprender</div><div class="d">gradient descent</div></div>
+  </div>
+  <div class="grid">
+    <div class="card"><div class="ic">✅</div><h3>QA obligatorio</h3><p>Cada publicación pasa control: <b>imagen 16:9 con nano_banana_pro</b>, copy ≤280 en X (URL en el reply), sin AI-slop, fuente real, dedupe a 7 días.</p></div>
+    <div class="card"><div class="ic">🔒</div><h3>Kill-switch</h3><p>Un flag global (<span class="mono">auto_publish</span>) en platforms.yaml. En false, el motor solo encola. Control total.</p></div>
+    <div class="card"><div class="ic">⏰</div><h3>El cron hace el trabajo</h3><p>Research 4h · publicación 1h (señal-prioridad) · reporte diario. Programado en Supercomputer → Scheduled.</p></div>
+  </div>
+  <div class="step-arrow"><span class="ln"></span><span class="ic">↓</span><span class="ln"></span></div>
+</div></section>
+
+<!-- ====== ONBOARDING GUIADO ====== -->
+<section class="alt"><div class="wrap" id="onboarding">
+  <div class="sec-head"><div class="num">★</div><h2>Instalación guiada</h2><span class="tag">prompts en orden + cronograma</span></div>
+  <p class="lead">No hace falta saber qué escribir. Sigue la secuencia: pega cada prompt <b>en orden</b> en Supercomputer, responde al onboarding que el agente te hace, y él configura <b>X, LinkedIn y el pipeline completo</b>. El cronograma te dice qué se hace y cuándo.</p>
+
+  <div class="onb">
+    <div class="col">
+      <h3>Cronograma del alumno</h3>
+      <p class="lead">Lo que haces tú, una sola vez (día 0).</p>
+      <div class="tline">
+        <div class="tstep"><div class="tt">Conecta tus redes<span class="tm">~5 min</span></div><div class="td">Supercomputer → Connectors: X y LinkedIn (OAuth). Deben quedar con check verde.</div></div>
+        <div class="tstep"><div class="tt">Pega el Prompt 1<span class="tm">~2 min</span></div><div class="td">El agente arranca el onboarding y te empieza a preguntar.</div></div>
+        <div class="tstep"><div class="tt">Responde el cuestionario<span class="tm">~10 min</span></div><div class="td">9 preguntas: plataformas, idiomas, objetivo, temas, horarios, cadencia, tono, kill-switch y avisos.</div></div>
+        <div class="tstep"><div class="tt">Pega los prompts 2 → 9<span class="tm">~15 min</span></div><div class="td">Cada uno configura una pieza. El agente va guardando todo en git.</div></div>
+        <div class="tstep"><div class="tt">Test con auto_publish=false<span class="tm">~5 min</span></div><div class="td">Revisas el primer draft. Solo encola, no publica nada.</div></div>
+        <div class="tstep"><div class="tt">GO — activa el pipeline<span class="tm">~1 min</span></div><div class="td">Pones auto_publish=true y los crons empiezan a trabajar solos.</div></div>
+      </div>
+    </div>
+    <div class="col">
+      <h3>Cronograma automático</h3>
+      <p class="lead">Lo que hace el motor cada día (solo tras el GO).</p>
+      <div class="tline">
+        <div class="tstep"><div class="tt">Research<span class="tm">cada 4h</span></div><div class="td">Web search + timeline X → señales (3-6 reales con URL y fuente).</div></div>
+        <div class="tstep"><div class="tt">Puntuación + copy + imagen<span class="tm">por ciclo</span></div><div class="td">Puntúa 0-100, elige las 2-3 top, escribe copy e imagen 16:9.</div></div>
+        <div class="tstep"><div class="tt">Publicación<span class="tm">cada 1h</span></div><div class="td">1 post señal-prioridad, SOLO dentro de best-hours.</div></div>
+        <div class="tstep"><div class="tt">Medición<span class="tm">tras publicar</span></div><div class="td">Impresiones / likes / replies → BD.</div></div>
+        <div class="tstep"><div class="tt">Aprendizaje<span class="tm">continuo</span></div><div class="td">Re-pondera temas según el engagement real.</div></div>
+        <div class="tstep"><div class="tt">Reporte diario<span class="tm">1/día</span></div><div class="td">Slack + Telegram con métricas y recomendaciones.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-head" style="margin-top:60px"><div class="num">→</div><h2>Los prompts, en orden</h2><span class="tag">copia y pega en Supercomputer</span></div>
+  <p class="lead">Pégalos de arriba a abajo. Cada uno pide al agente configurar una pieza del pipeline. Los <b>{corchetes}</b> son los datos que sustituye tu respuesta del cuestionario.</p>
+  <div id="prompts">
+    <div class="prcard">
+      <div class="prhead"><span class="n">1</span><span class="t">Arranque del onboarding</span><span class="tm">empieza aquí</span></div>
+      <div class="prbody">Crea el pipeline del Social Growth Engine ("de cero a 100k").
+
+Antes de nada hazme un onboarding: pregúntame UNA pregunta cada vez y espera mi respuesta, sobre:
+1) Plataformas: qué redes quiero (X, LinkedIn, TikTok...).
+2) Idioma de cada red.
+3) Mi objetivo de seguidores.
+4) Temas/nichos a vigilar.
+5) Horarios óptimos (best-hours) de publicación.
+6) Cadencia diaria (posts por día y por red).
+7) Tono de voz de la marca.
+8) Kill-switch: auto_publish activo (publica) o solo encolar (draft).
+9) Canal de avisos (Slack/Telegram).
+
+NO publiques nada hasta que termine de responder.</div>
+      <div class="prfoot"><button class="prcopy">Copiar prompt</button></div>
+    </div>
+    <div class="prcard">
+      <div class="prhead"><span class="n">2</span><span class="t">Configura plataformas e idiomas</span><span class="tm">en tu respuesta</span></div>
+      <div class="prbody">Con mi configuración del onboarding, configura ahora mis plataformas:
+- Conecta {plataformas} y verifica que los conectores están activos.
+- {X}: idioma {idioma_X}, copy ≤280 caracteres, sin URL en el body (la fuente va en el primer reply).
+- {LinkedIn}: idioma {idioma_LI}, tono narrativo, pregunta final, enlace al final del body, imagen 16:9 obligatoria.
+
+Guarda todo en platforms.yaml y haz commit + push.</div>
+      <div class="prfoot"><button class="prcopy">Copiar prompt</button></div>
+    </div>
+    <div class="prcard">
+      <div class="prhead"><span class="n">3</span><span class="t">Define mis temas</span><span class="tm">temas + keywords</span></div>
+      <div class="prbody">Crea topics.yaml con mis temas y sus keywords:
+{temas: lista de temas de mi respuesta}
+
+Usa peso inicial uniforme. El learning loop re-ponderará cada tema según el engagement real. Cada señal debe llevar URL y fuente veraz (nada inventado).</div>
+      <div class="prfoot"><button class="prcopy">Copiar prompt</button></div>
+    </div>
+    <div class="prcard">
+      <div class="prhead"><span class="n">4</span><span class="t">Cadencia y best-hours</span><span class="tm">el horario</span></div>
+      <div class="prbody">Crea cadence.yaml:
+- best-hours: {horarios} (ventana OBLIGATORIA, NO publicar fuera de ella).
+- cadencia diaria: {X: 9, LinkedIn: 3}.
+- señal-prioridad: 1 post/hora dentro de la ventana.
+
+Guárdalo y haz commit + push.</div>
+      <div class="prfoot"><button class="prcopy">Copiar prompt</button></div>
+    </div>
+    <div class="prcard">
+      <div class="prhead"><span class="n">5</span><span class="t">Kill-switch y control de calidad</span><span class="tm">seguridad</span></div>
+      <div class="prbody">Activa el control de calidad:
+- auto_publish: {true|false} ← kill-switch global (en false solo encola, nunca publica).
+- QA obligatorio por post: imagen 16:9, copy ≤280 en X, fuente real, sin AI-slop, dedupe a 7 días.
+
+Guárdalo en platforms.yaml.</div>
+      <div class="prfoot"><button class="prcopy">Copiar prompt</button></div>
+    </div>
+    <div class="prcard">
+      <div class="prhead"><span class="n">6</span><span class="t">Crea los skills</span><span class="tm">el know-how</span></div>
+      <div class="prbody">Crea los skills del motor:
+1) social-growth-engine (runbook completo).
+2) social-growth-engine-cycle (ciclo de research + tick horario de publicación).
+3) sge-publish-one-post (publica 1 post respetando kill-switch y best-hours).
+4) social-short-pipeline (reels verticales con avatar y voz).
+
+Usa las plantillas descargables de la sección "Subagentes" de esta guía.</div>
+      <div class="prfoot"><button class="prcopy">Copiar prompt</button></div>
+    </div>
+    <div class="prcard">
+      <div class="prhead"><span class="n">7</span><span class="t">Programa los crons</span><span class="tm">el automatismo</span></div>
+      <div class="prbody">Programa los trabajos en Scheduled:
+- Research: cada 4 horas.
+- Publish: cada 1 hora (dentro de best-hours).
+- Reporte diario: 1 vez al día.
+
+Tras cada cambio, haz commit + push a git.</div>
+      <div class="prfoot"><button class="prcopy">Copiar prompt</button></div>
+    </div>
+    <div class="prcard">
+      <div class="prhead"><span class="n">8</span><span class="t">Configura los avisos</span><span class="tm">te cuenta cómo va</span></div>
+      <div class="prbody">Configura los avisos:
+- Slack: canal {#canal}, avisa de cada publicación y del reporte diario.
+- Telegram: chatId {chatId} vía HTTP API.
+
+Formato de cada aviso: [SGE] Qué → URL · coste · fecha.</div>
+      <div class="prfoot"><button class="prcopy">Copiar prompt</button></div>
+    </div>
+    <div class="prcard">
+      <div class="prhead"><span class="n">9</span><span class="t">Verificación final (GO / no-GO)</span><span class="tm">último paso</span></div>
+      <div class="prbody">Verificación final:
+- Revisa que conectores, config, skills y crons están listos.
+- Cola vacía y configuración validada.
+- Ejecuta un TEST con auto_publish=false y muéstrame el primer draft completo (copy + imagen).
+- Espera mi OK. Solo cuando yo confirme, pon auto_publish en true.</div>
+      <div class="prfoot"><button class="prcopy">Copiar prompt</button></div>
+    </div>
+  </div>
+  <div style="margin-top:20px"><button class="btn btn-ghost" id="copyall">Copiar todos los prompts →</button></div>
+
+  <div class="sec-head" style="margin-top:60px"><div class="num">?</div><h2>El onboarding que te hará el agente</h2><span class="tag">ten las respuestas listas</span></div>
+  <p class="lead">Al pegar el Prompt 1, el agente te preguntará una a una. Esto es lo que te va a preguntar y qué tener preparado.</p>
+  <div class="qgrid">
+    <div class="qcard"><div class="qk">Pregunta 1</div><div class="qv">Plataformas</div><div class="qs">"¿Qué redes quieres usar?" Recomendado: X + LinkedIn (después puedes sumar TikTok).</div></div>
+    <div class="qcard"><div class="qk">Pregunta 2</div><div class="qv">Idiomas</div><div class="qs">"¿En qué idioma escribo en cada red?" Ej. X en inglés, LinkedIn en español.</div></div>
+    <div class="qcard"><div class="qk">Pregunta 3</div><div class="qv">Objetivo</div><div class="qs">"¿Cuántos seguidores quieres alcanzar?" Ej. 100k.</div></div>
+    <div class="qcard"><div class="qk">Pregunta 4</div><div class="qv">Temas</div><div class="qs">"¿Sobre qué quieres publicar?" Tu lista de nichos + keywords.</div></div>
+    <div class="qcard"><div class="qk">Pregunta 5</div><div class="qv">Best-hours</div><div class="qs">"¿En qué horas está tu audiencia?" La ventana obligatoria de publicación.</div></div>
+    <div class="qcard"><div class="qk">Pregunta 6</div><div class="qv">Cadencia</div><div class="qs">"¿Cuántos posts al día y por red?" Ej. X 9, LinkedIn 3.</div></div>
+    <div class="qcard"><div class="qk">Pregunta 7</div><div class="qv">Tono</div><div class="qs">"¿Cómo suena tu marca?" Directo, narrativo, educativo, humor... </div></div>
+    <div class="qcard"><div class="qk">Pregunta 8</div><div class="qv">Kill-switch</div><div class="qs">"¿Publico solo o te enseño antes el draft?" auto_publish true o false.</div></div>
+    <div class="qcard"><div class="qk">Pregunta 9</div><div class="qv">Avisos</div><div class="qs">"¿Dónde te aviso de cada post?" Slack, Telegram o ambos.</div></div>
+  </div>
+</div></section>
+
+<!-- ====== PASO 9 ====== -->
+<section><div class="wrap">
+  <div class="sec-head"><div class="num">9</div><h2>El resultado en <span style="display:inline-flex;align-items:center;gap:8px;vertical-align:middle"><svg viewBox="0 0 24 24" role="img" aria-label="Slack" style="width:26px;height:26px"><path fill="#E01E5A" d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313z"/><path fill="#36C5F0" d="M8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.521A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.521-2.521h6.313z"/><path fill="#2EB67D" d="M18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.521A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.521v6.313z"/><path fill="#ECB22E" d="M15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"/></svg>Slack</span></h2><span class="tag">Monitoreo en directo</span></div>
+  <div class="stepimg">
+    <div class="img">
+      <div class="cap"><span class="rec"></span> Captura real · #sge-notif</div>
+      <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_2zv0ZwTLslDi8yQhQ13R8PX7SVU/9f9f1b59-a6e8-4941-9712-8be73f4d069f.webp" alt="Canal Slack sge-notif" loading="eager" decoding="async" width="1000" height="590">
+    </div>
+    <div class="txt">
+      <div class="step-n">Paso 9 · Avisos</div>
+      <h3>Slack te cuenta cómo va todo</h3>
+      <p>Un canal (<b>#sge-notif</b>) recibe cada publicación y el <b>reporte diario de consolidación</b>: seguidores, posts, métricas y recomendaciones.</p>
+      <ul>
+        <li>Seguidores X: 56 (objetivo 100k).</li>
+        <li>Métricas de hoy: 61 impresiones · 1 like · 2 replies.</li>
+        <li>BD: 49 señales · 12 métricas.</li>
+        <li>Recomendación automática de ajuste.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="step-arrow"><span class="ln"></span><span class="ic">↓</span><span class="ln"></span></div>
+</div></section>
+
+<!-- ====== PASO 10 ====== -->
+<section class="alt"><div class="wrap">
+  <div class="sec-head"><div class="num">10</div><h2>El pipeline en X y LinkedIn</h2><span class="tag">Prueba real</span></div>
+  <div class="stepimg">
+    <div class="txt">
+      <div class="step-n">Paso 10 · X</div>
+      <h3>Publicado de forma autónoma</h3>
+      <p>Este post de Polymarket lo escribió y publicó el motor solo. Regla en acción: <b>body sin URL</b>, <b>fuente en el primer reply</b>.</p>
+      <ul>
+        <li>Copy en inglés, ≤280 caracteres.</li>
+        <li>Hook directo: "Prediction markets just got institutional."</li>
+        <li>Reply con la fuente (Bloomberg).</li>
+      </ul>
+    </div>
+    <div class="img">
+      <div class="cap"><span class="rec"></span> Captura real · X @TU_HANDLE</div>
+      <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_2zv0ZwTLslDi8yQhQ13R8PX7SVU/a47a8fa9-785b-49b4-b958-089230358fac.webp" alt="Perfil X" loading="eager" decoding="async" width="1000" height="590">
+    </div>
+  </div>
+  <div class="stepimg rev">
+    <div class="img">
+      <div class="cap"><span class="rec"></span> Captura real · LinkedIn {TU_NOMBRE}</div>
+      <img src="https://d2ol7oe51mr4n9.cloudfront.net/user_2zv0ZwTLslDi8yQhQ13R8PX7SVU/d924ebbd-ccbb-4836-9703-d3640a0b35eb.webp" alt="Perfil LinkedIn" loading="eager" decoding="async" width="1000" height="590">
+    </div>
+    <div class="txt">
+      <div class="step-n">Paso 10b · LinkedIn</div>
+      <h3>El mismo motor, en español y narrativo</h3>
+      <p>Publica en español, con narrativa y pregunta final. Cada post lleva su imagen 16:9 y el enlace al final del body.</p>
+      <ul>
+        <li>Español profesional, tono narrativo.</li>
+        <li>Pregunta final para el debate.</li>
+        <li>Imagen 16:9 obligatoria.</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- ====== CIERRE ====== -->
+<section><div class="wrap">
+  <div class="sec-head"><div class="num">+</div><h2>Y te avisa cada día</h2><span class="tag">Slack + Telegram</span></div>
+  <p class="lead">Además del canal de Slack, configura <b>Telegram</b> para que otro cron te envíe cada día el resumen de cómo van tus contenidos. Todo en ≤400 caracteres.</p>
+  <div class="notify">
+    <div class="ncard"><div class="k">Formato</div><div class="v">[SGE] Qué → URL · coste · fecha</div><div class="sub">≤400 caracteres</div></div>
+    <div class="ncard"><div class="k">Canal 1</div><div class="v">Telegram</div><div class="sub">chatId {TU_CHAT_ID} · HTTP API</div></div>
+    <div class="ncard"><div class="k">Canal 2</div><div class="v" style="display:flex;align-items:center;gap:8px"><svg viewBox="0 0 24 24" role="img" aria-label="Slack" style="width:20px;height:20px;flex:0 0 auto"><path fill="#E01E5A" d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313z"/><path fill="#36C5F0" d="M8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.521A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.521-2.521h6.313z"/><path fill="#2EB67D" d="M18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.521A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.521v6.313z"/><path fill="#ECB22E" d="M15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"/></svg>Slack · sge-notif</div><div class="sub">espejo con redes-sociales</div></div>
+    <div class="ncard"><div class="k">Canal 3</div><div class="v">Gmail</div><div class="sub">resumen diario programado</div></div>
+  </div>
+</div></section>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <div class="wrap">
+    <div class="big">De cero a motor <em>autónomo</em></div>
+    <p>Busca Higgsfield → abre Supercomputer → conecta tus redes → crea subagentes con skills → define tus temas → el cron hace el trabajo → recibe el reporte diario. Todo en git, todo reproducible.</p>
+    <div class="pill-line">
+      <span class="pill"><b>Research</b> <span class="g">·</span> 4h</span>
+      <span class="pill"><b>Publish</b> <span class="g">·</span> 1h</span>
+      <span class="pill"><b>nano_banana_pro</b></span>
+      <span class="pill"><b>100k</b> <span class="g">objetivo</span></span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ====== ANIMATIONS (Apple: reveal, contadores, parallax) ====== -->
+<script>(function(){
+  // Contadores animados (KPIs) — se disparan al cargar
+  function runCounters(){
+    document.querySelectorAll('.cnt').forEach(function(c){
+      if(c.dataset.done) return; c.dataset.done = 1;
+      var end = parseInt(c.dataset.count,10)||0, t0 = performance.now(), dur = 1200;
+      (function tick(now){
+        var p = Math.min((now - t0)/dur, 1);
+        var eased = 1 - Math.pow(1-p, 3); // easeOutCubic
+        var val = Math.round(end * eased);
+        c.textContent = end>=100 ? val.toLocaleString('en-US') : String(val);
+        if(p<1) requestAnimationFrame(tick); else c.textContent = end>=100 ? end.toLocaleString('en-US') : String(end);
+      })(t0);
+    });
+  }
+  // 1) Parallax sutil en el hero
+  var pEls = document.querySelectorAll('.parallax');
+  var ticking = false;
+  function parallax(){
+    var y = window.pageYOffset;
+    if(y > window.innerHeight) y = 0;
+    pEls.forEach(function(el){
+      var speed = parseFloat(el.dataset.speed || 0.2);
+      el.style.transform = 'translateY(' + (y*speed) + 'px)';
+    });
+    ticking = false;
+  }
+  window.addEventListener('scroll', function(){
+    if(!ticking){ requestAnimationFrame(parallax); ticking = true; }
+  }, {passive:true});
+  parallax();
+  // 2) Copiar .md de subagentes y skills
+  document.querySelectorAll('.copybtn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var md = btn.closest('details').querySelector('.md').innerText;
+      var done = function(){ btn.classList.add('copied'); btn.textContent = '✓ Copiado'; setTimeout(function(){
+        btn.classList.remove('copied'); btn.textContent = 'Copiar .md'; }, 1800); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(md).then(done).catch(function(){ fallbackCopy(md, done); });
+      } else { fallbackCopy(md, done); }
+    });
+  });
+  // 2b) Descargar .md como plantilla
+  document.querySelectorAll('.dlbtn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var md = btn.closest('details').querySelector('.md').innerText;
+      var name = (btn.dataset.name || 'plantilla') + '.md';
+      var blob = new Blob([md], {type:'text/markdown;charset=utf-8'});
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(blob); a.download = name;
+      document.body.appendChild(a); a.click();
+      setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 400);
+      var orig = btn.textContent; btn.classList.add('copied'); btn.textContent = '✓ Descargado';
+      setTimeout(function(){ btn.classList.remove('copied'); btn.textContent = orig; }, 1800);
+    });
+  });
+  // 2c) Copiar un prompt individual (onboarding)
+  document.querySelectorAll('.prcopy').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var md = btn.closest('.prcard').querySelector('.prbody').innerText;
+      var done = function(){ btn.classList.add('copied'); btn.textContent = '✓ Copiado'; setTimeout(function(){
+        btn.classList.remove('copied'); btn.textContent = 'Copiar prompt'; }, 1800); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(md).then(done).catch(function(){ fallbackCopy(md, done); });
+      } else { fallbackCopy(md, done); }
+    });
+  });
+  // 2d) Copiar todos los prompts en orden
+  var copyAllBtn = document.getElementById('copyall');
+  if (copyAllBtn){
+    copyAllBtn.addEventListener('click', function(){
+      var parts = [];
+      document.querySelectorAll('#prompts .prcard').forEach(function(c){
+        var n = c.querySelector('.prhead .n').innerText;
+        var body = c.querySelector('.prbody').innerText;
+        parts.push('### Prompt ' + n + '\n\n' + body);
+      });
+      var text = parts.join('\n\n---\n\n');
+      var done = function(){ var o = copyAllBtn.textContent; copyAllBtn.textContent = '✓ Copiados'; setTimeout(function(){ copyAllBtn.textContent = o; }, 1800); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done).catch(function(){ fallbackCopy(text, done); });
+      } else { fallbackCopy(text, done); }
+    });
+  }
+  function fallbackCopy(text, done){
+    var ta = document.createElement('textarea'); ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); done(); } catch(e){}
+    document.body.removeChild(ta);
+  }
+  // 3) Contadores + reveal (CSS ya anima; aquí solo dispara al cargar)
+  if(window.requestAnimationFrame) requestAnimationFrame(runCounters); else runCounters();
+  // 4) Las imágenes de sección cargan eager (tutorial: las capturas son el núcleo)
+})();</script>
+</body>
+</html>
