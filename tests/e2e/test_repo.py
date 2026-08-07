@@ -91,6 +91,9 @@ def walk_files(root):
         if ".git" in dirpath or "__pycache__" in dirpath:
             continue
         for f in filenames:
+            # config/secrets.env se crea en el setup (gitignored, legítimo en disco)
+            if dirpath.endswith("config") and f == "secrets.env":
+                continue
             out.append(os.path.join(dirpath, f))
     return out
 

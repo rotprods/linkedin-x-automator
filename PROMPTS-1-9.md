@@ -4,6 +4,9 @@
 
 ---
 
+## PROMPT 0b — Autoprovisionamiento del motor
+Ejecuta `scripts/setup_autonomo.py --seed-db` en mi repo de alumno y verifica que: estructura OK, config runtime creada, motor importa, DB sembrada. Si hay placeholders sin resolver, dime cuáles y ayúdame a rellenarlos con mi configuración. Luego confirma que el motor arranca con `python3 signal_pipeline/run_every_4h.py --dry-run`.
+
 ## PROMPT 1 — Configurar mis plataformas e idiomas
 Con mi configuración del onboarding, configura ahora mis plataformas:
 - Conecta `{plataformas}` y verifica que los conectores están activos (check verde).
@@ -42,10 +45,10 @@ growth-engine-operator (orquestador), content-creator, trend-scout, social-media
 
 ## PROMPT 7 — Programar los crons
 Programa en Scheduled:
-- Research: cada 4 horas.
-- Publish: cada 1 hora (dentro de best-hours).
-- Reporte diario: 1 vez al día.
-Tras cada cambio, haz commit + push a git.
+- Research: cada 4 horas → `python3 signal_pipeline/run_every_4h.py`.
+- Publish: cada 1 hora (dentro de best-hours) → `python3 scripts/hourly_tick.py`.
+- Reporte diario: 1 vez al día → `python3 scripts/daily_report.py`.
+Verifica que cada runner arranca sin errores (dry-run) antes de dejarlo programado. Tras cada cambio, haz commit + push a git.
 
 ## PROMPT 8 — Configurar los avisos
 Configura los avisos:
