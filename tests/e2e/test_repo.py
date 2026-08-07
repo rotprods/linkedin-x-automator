@@ -48,6 +48,7 @@ REQUIRED_FILES = [
     "onboarding/FAQ.md",
     "onboarding/telegram-setup.md",
     "onboarding/skills-produccion-setup.md",
+    "onboarding/guia-placeholders.md",
     "data/schema.sql",
     # Skills de calidad/producción
     "skills/linkedin-post-quality-checklist.md",

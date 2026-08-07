@@ -33,7 +33,7 @@ El agente te hará un **onboarding de 9 preguntas**, instalará los skills y sub
 | `skills/` | Los 10 skills del motor y de calidad/producción (plantillas) |
 | `agents/` | El equipo de subagentes (plantillas) |
 | `config/` | Configuración (platforms, cadence, topics, secrets) |
-| `onboarding/` | Guías paso a paso (Slack, Telegram, conectores, checklist, cuestionario, FAQ, skills-produccion) |
+| `onboarding/` | Guías paso a paso (Slack, Telegram, conectores, checklist, cuestionario, FAQ, skills-produccion, placeholders) |
 | `signal_pipeline/` | **Motor**: investigación de señales cada 4h |
 | `content_engine/` | **Motor**: señales → posts + imágenes |
 | `publisher/` | **Motor**: publicación X/LinkedIn + anti-duplicados |
