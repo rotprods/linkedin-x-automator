@@ -8,9 +8,10 @@ config/secrets.env
 data/*.db
 data/*.sqlite
 data/*.sqlite3
-data/state/
-state/
+state/*.json
+state/*.csv
 *.csv
+*.log
 
 # --- Python ---
 __pycache__/
@@ -20,9 +21,10 @@ venv/
 
 # --- Sistema / editor ---
 .DS_Store
-*.log
 node_modules/
 
 # --- Ejemplos de contenido del alumno (no subir) ---
-research/drafts/
-research/feeds/
+research/drafts/*
+research/feeds/*
+!research/drafts/.gitkeep
+!research/feeds/.gitkeep

@@ -1,0 +1,20 @@
+# Índice de investigación — tus pilares temáticos
+# Cada pilar: keywords de búsqueda, ángulos ganadores y fuentes de seguimiento.
+# El learning loop reweighta estos pesos según rendimiento real.
+# >>> Sustituye {TEMA_1}... con TUS temas del onboarding. <<<
+
+version: 1
+
+topics:
+  {TEMA_1}:
+    weight: 1.0
+    keywords: [keyword1, keyword2, keyword3]
+    angles: [angle1, angle2, angle3]
+  {TEMA_2}:
+    weight: 0.9
+    keywords: [keyword1, keyword2]
+    angles: [angle1, angle2]
+  {TEMA_3}:
+    weight: 0.8
+    keywords: [keyword1, keyword2]
+    angles: [angle1, angle2]

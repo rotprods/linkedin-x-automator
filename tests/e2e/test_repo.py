@@ -46,10 +46,35 @@ REQUIRED_FILES = [
     "onboarding/higgsfield-connectors.md",
     "onboarding/checklist-final.md",
     "onboarding/FAQ.md",
+    "onboarding/telegram-setup.md",
     "data/schema.sql",
+    # Motor (código real copiado)
+    "signal_pipeline/config.py",
+    "signal_pipeline/score.py",
+    "signal_pipeline/sources.py",
+    "signal_pipeline/store.py",
+    "signal_pipeline/run_every_4h.py",
+    "content_engine/builders.py",
+    "content_engine/calendar.py",
+    "content_engine/hooks.py",
+    "publisher/publisher.py",
+    "learning_loop/calibrate.py",
+    "learning_loop/learn.py",
+    "learning_loop/metrics.py",
+    "contentdb_client.py",
+    "scripts/seed_first_run.py",
+    "scripts/daily_ingest.py",
+    "scripts/daily_report.py",
+    "scripts/hourly_tick.py",
+    # Config runtime (con placeholders)
+    "config/platforms.yaml",
+    "config/cadence.yaml",
+    "config/topics.yaml",
 ]
 
-REQUIRED_DIRS = ["skills", "agents", "config", "onboarding", "data", "tests"]
+REQUIRED_DIRS = ["skills", "agents", "config", "onboarding", "data", "state",
+                 "tests", "signal_pipeline", "content_engine", "publisher",
+                 "learning_loop", "scripts"]
 
 
 def walk_files(root):

@@ -32,8 +32,13 @@ El agente te hará un **onboarding de 9 preguntas**, instalará los skills y sub
 | `PROMPTS-1-9.md` | Prompts de refuerzo por fase |
 | `skills/` | Los 4 skills del motor (plantillas) |
 | `agents/` | El equipo de subagentes (plantillas) |
-| `config/` | Plantillas de configuración (platforms, cadence, topics, secrets) |
-| `onboarding/` | Guías paso a paso (Slack, conectores, checklist, cuestionario, FAQ) |
+| `config/` | Configuración (platforms, cadence, topics, secrets) |
+| `onboarding/` | Guías paso a paso (Slack, Telegram, conectores, checklist, cuestionario, FAQ) |
+| `signal_pipeline/` | **Motor**: investigación de señales cada 4h |
+| `content_engine/` | **Motor**: señales → posts + imágenes |
+| `publisher/` | **Motor**: publicación X/LinkedIn + anti-duplicados |
+| `learning_loop/` | **Motor**: métricas + aprendizaje dinámico |
+| `scripts/` | Seed inicial, reportes, ticks |
 | `data/schema.sql` | Esquema SQLite (sin datos) |
 | `tests/` | Test end-to-end del repo |
 
